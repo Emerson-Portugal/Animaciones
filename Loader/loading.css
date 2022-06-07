@@ -1,0 +1,72 @@
+/* From uiverse.io by @Mike11jr */
+
+#preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.image {
+  position: absolute;
+}
+
+.spinner {
+  position: relative;
+  width: 15rem;
+  height: 15rem;
+  position: relative;
+}
+
+.spinner .dot {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.spinner .dot::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(74, 53, 17);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner .dot {
+  animation: spin 2s infinite;
+}
+
+.spinner .dot:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.spinner .dot:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+.spinner .dot:nth-child(4) {
+  animation-delay: 300ms;
+}
+
+.spinner .dot:nth-child(5) {
+  animation-delay: 400ms;
+}
+
+
+/*centrado*/
+
+#fullpage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#fullpage h1{
+  font-size: 5rem;
+}
